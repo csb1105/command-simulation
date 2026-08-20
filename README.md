@@ -1,4 +1,4 @@
-Command System Simulation (CSIM)
+# Command System Simulation (CSIM)
 
 Experimental simulation of command-system behavior under degraded, uncertain, adversarial, and dynamically changing operational conditions.
 
@@ -6,7 +6,7 @@ CSIM models command as a dynamic system rather than evaluating command effective
 
 The simulation investigates how command performance changes as information quality, communications capacity, uncertainty, cognitive and organizational load, authority distribution, coordination demand, human compensation, operational tempo, dependencies, and system degradation interact over time.
 
-Core Research Question
+# Core Research Question
 
 Militaries extensively simulate battlefields, platforms, adversaries, logistics, communications, and tactical outcomes.
 
@@ -15,7 +15,6 @@ Why aren't we simulating command with comparable rigor?
 CSIM treats operational failure as a trajectory rather than merely a terminal event. A command system may continue producing apparently normal mission output while its underlying resilience is deteriorating.
 
 The prototype therefore separates observable performance from latent system state and models precursor conditions including:
-
 Shared-State Coherence
 Coordination Debt
 Effective Command Load
@@ -30,27 +29,27 @@ Current Prototype
 
 The browser interface supports interactive exploration of command-system trajectories under communications degradation and different human command decisions.
 
-Current experimental behaviors include:
+# Current experimental behaviors include:
 
-Phantom Stability
+## Phantom Stability
 Observable command performance remains stable while underlying resilience deteriorates.
 
-Human Buffer Collapse
+## Human Buffer Collapse
 Human compensatory capacity temporarily absorbs architectural weakness until finite reserve is depleted.
 
-Coordination Debt
+## Coordination Debt
 Unresolved coordination requirements accumulate and increase future command workload and recovery burden.
 
-Silent Slack Erosion
+## Silent Slack Erosion
 Adaptive capacity disappears before conventional performance indicators reveal degradation.
 
-Command-System Incoherence
+## Command-System Incoherence
 Locally functional command nodes can develop incompatible operational models, producing contradictory actions, resource contention, rework, and additional command demand.
 
-Path Dependence
+## Path Dependence
 Identical disruptions can produce different outcomes because the command system reaches them through different prior trajectories.
 
-Architecture
+# Architecture
 
 CSIM uses a dynamic command-system model incorporating:
 Command Nodes
@@ -75,7 +74,7 @@ State transitions follow an Observe → Resolve → Commit architecture so simul
 
 The system also preserves causal provenance so observed degradation can be traced to contributing mechanisms rather than represented as an unexplained aggregate score.
 
-Human Command Decisions
+# Human Command Decisions
 
 The prototype allows controlled comparison of alternative command actions from an identical system state, including:
 
@@ -88,7 +87,7 @@ These actions are not assigned a universal ranking or "best action" score.
 
 Their consequences emerge through interaction with the command environment, architecture, current system state, and prior trajectory.
 
-Future Maneuver
+# Future Maneuver
 
 Candidate actions are evaluated through a multidimensional Future Maneuver Profile examining properties such as:
 
@@ -106,7 +105,7 @@ opportunity creation and destruction
 
 Future maneuver is intentionally not collapsed into a single readiness or option-space score.
 
-TM-DA Integration
+# TM-DA Integration
 
 The current prototype includes a provisional integration layer for the 52 Tactical Mission Decision Architecture (TM-DA) decision functions as a state-responsive operator registry.
 
@@ -116,7 +115,7 @@ The prototype does not claim to implement the authoritative TM-DA mathematical m
 
 Instead, it provides an architectural interface through which formally defined transformation semantics, selection mechanics, invariants, composition rules, and Future Maneuver mathematics can later be incorporated without replacing the underlying command-system simulation.
 
-Repository Contents
+# Repository Contents
 
 index.html
 Standalone interactive browser interface for CSIM.
@@ -124,7 +123,7 @@ Standalone interactive browser interface for CSIM.
 Command_Simulation_Prototype_v0_9.ipynb
 Computational research notebook containing the underlying simulation mechanics, controlled experiments, validation, and trajectory analysis.
 
-Status
+# Status
 
 Research Prototype
 
